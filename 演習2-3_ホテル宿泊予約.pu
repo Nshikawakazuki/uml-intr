@@ -1,7 +1,10 @@
 @startuml 宿泊予約
-rectangle 予約 {
-usecase 宿泊予約
-usecase 利用者
+left to right direction
+actor 利用者
+rectangle 宿泊予約 {
+    usecase 予約
+    usecase ログイン
 }
-宿泊予約 <. 利用者 : << ログイン >>
+利用者 --> 予約
+予約 ..> ログイン : <<include>>
 @enduml

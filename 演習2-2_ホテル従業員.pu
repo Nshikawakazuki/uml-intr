@@ -1,9 +1,5 @@
 @startuml ホテル
-rectangle ホテル {
-usecase 働く
-usecase 経営者
-usecase 従業員
-}
-働く <|-- 経営者
-働く <|-- 従業員
+actor ホテル従業員
+actor 経営者
+ホテル従業員 <|-- 経営者
 @enduml

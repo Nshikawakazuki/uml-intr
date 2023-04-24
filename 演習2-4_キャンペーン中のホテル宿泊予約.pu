@@ -1,7 +1,10 @@
 @startuml キャンペーン
-rectangle 予約 {
-usecase キャンペーン期間
-usecase キャンペーン
+left to right direction
+actor 利用者
+rectangle 予約システム {
+    usecase キャンペーン価格にする
+    usecase (<u>予約</u>\n拡張点\nキャンペーン期間中) as input
 }
-キャンペーン .> キャンペーン期間 : << extend >>
+利用者 --> キャンペーン価格にする
+キャンペーン価格にする ..> input : <<extend>>
 @enduml

@@ -1,0 +1,14 @@
+@startuml 診察記録
+ left to right direction
+class "医者" as doctor {
+}
+class "患者" as patient {
+}
+class "医局" as unit {
+-外科
+-内科
+-小児科
+}
+doctor "1" -down- "1"   patient 
+doctor "1" -down- "*" unit
+@enduml

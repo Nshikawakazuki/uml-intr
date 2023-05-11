@@ -19,4 +19,6 @@ activate 受注係
         create "<u>エンティティ:注文</u>" as th <<entity>>
             sc --> th:<<create>>
             activate th
+
+            
 @enduml

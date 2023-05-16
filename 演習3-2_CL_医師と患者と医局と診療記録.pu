@@ -9,6 +9,10 @@ class "医局" as unit {
 -内科
 -小児科
 }
-doctor "1" -down- "1"   patient 
-doctor "1" -down- "*" unit
+class "診察記録" as check {
+}
+
+doctor "1" --> "1" patient :診察 > 
+doctor "1" --> "*" unit :所属 >
+doctor "1" --> "*" check :記録 >
 @enduml

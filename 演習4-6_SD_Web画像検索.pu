@@ -12,6 +12,8 @@ br -> web:画像検索
 web -> ga:画像ファイル検索
 activate ga
 ga -> ga:検索
+activate ga
+deactivate ga
 web <-- ga:検索結果
 deactivate ga
 web --> web:閲覧可能状態

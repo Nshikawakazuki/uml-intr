@@ -1,4 +1,4 @@
-@startuml
+@startuml a
 title パーティション
 |ユーザーA|
 start

@@ -1,0 +1,47 @@
+@startuml 客室
+left to right direction
+class "ドリンク" as e {
+    サイズ
+}
+class "フード" as k {
+    サイズ
+}
+class "商品" as a  {
+    合計
+}
+class "注文明細" as b{
+    数量
+    小計
+}
+class "注文" as d {
+    名称
+    単価
+}
+class "カップ" as f {
+    種別
+}
+class "材料" as i {
+}
+class "ハンバーガー" as j {
+    種別
+}
+class "割引クーポン" as c {
+    値引
+    期限
+}
+class "レシピ" as g {
+}
+class "ポテト" as h {
+    サイズ
+}
+class "パン" as p {
+}
+class "肉" as n{
+}
+class "野菜" as y{
+}
+class "チーズ" as t {
+}
+g "1" -- "1"h
+
+@enduml
